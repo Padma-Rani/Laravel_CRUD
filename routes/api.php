@@ -11,8 +11,12 @@ Route::post('/create',function(Request $req){
     return response()->json(["message"=>"POST Response"]);
 });
 
-Route::put('/update',function(){
+Route::put('/replace',function(){
     return response()->json(["message"=>"PUT Response"]);
+});
+
+Route::patch('/update',function(){
+    return response()->json(["message"=>"PATCH Response"]);
 });
 
 Route::delete('/delete',function(){
