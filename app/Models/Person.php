@@ -8,7 +8,6 @@ class Person extends Model
 {
     protected $fillable = [
         'name',
-        'phone',
-        'date_of_birth',
+        'email',
     ];
 }
