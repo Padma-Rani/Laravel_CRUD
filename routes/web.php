@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get("/getAllUsers", [UserController::class, 'index']);
+Route::post("/createUsers", [UserController::class, 'store']);
