@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Person;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    // Route::get('/users', [UserController::class, 'index']);
-
+    public function index()
+    {
+        return response()->json(Person::all());
+    }
 }
